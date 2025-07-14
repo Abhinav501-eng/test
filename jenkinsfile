@@ -2,14 +2,15 @@ pipeline{
 
 agent any
 stages{
-	stage('SCM checkout')
+	stage('SCM checkout'){
 	 steps{ echo 'scm checkout done'}
-
-	stage('code compilation')
+	}
+	stage('code compilation'){
  	 steps{ echo 'code compilation is done'}
-
-	stage('code testing is done')
+	}
+	stage('code testing is done'){
 	 steps{ echo 'code testing is also done'}
+}
 }
 
 }
